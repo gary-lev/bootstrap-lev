@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$white:    #fff !default;
+$gray-100: hsl(220, 20%, 97%);
+$gray-200: hsl(228, 20%, 95%);
+$gray-300: hsl(223, 20%, 93%);
+$gray-400: hsl(219, 27%, 88%);
+$gray-500: hsl(221, 20%, 70%);
+$gray-600: hsl(221, 20%, 60%);
+$gray-700: hsl(220, 19%, 49%);
+$gray-800: hsl(223, 25%, 35%);
+$gray-900: hsl(219, 20%, 20%);
+
+$black:    #000 !default;
+
+$blue:    #001CCB !default;
+$indigo:  hsl(241, 37%, 34%) !default;
+$purple:  #86367e !default;
+$pink:    #e83e8c !default;
+$red:     hsl(357, 74%, 53%) !default;
+$orange:  #ffa200 !default;
+$yellow:  #ffc107 !default;
+$green:   hsl(147, 47%, 60%) !default;
+$teal:    #008489 !default;
+$cyan:    #2ca5dc !default;
+
+$primary:       $indigo;
+$secondary:     $blue;
+$success:       $green;
+$info:          $teal;
+$warning:       $orange;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          #0e2534;
+
+$gray-dark:                 $gray-800 !default;
+$gray:                      $gray-700 !default;
+$gray-light:                $gray-600 !default;
+$gray-lighter:              $gray-100 !default;
+$gray-lightest:             $gray-100 !default;
+$brand-success:             $green !default;
+$brand-info:                $indigo !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $red !default;
+$brand-inverse:             $gray-dark !default;
+
+$font-family-sans-serif:    'Open Sans', sans-serif !default;
+$font-family-roboto:        'Open Sans', sans-serif !default;
+
+// @import "~bootstrap/scss/bootstrap";
+@import "~mdb-ui-kit/src/scss/mdb.free.scss";
+@import "./svg.scss";
+
+// Typography
+
+html {
+  font-size: 14px;
+}
+
+// flex-column
+.btn-toolbar {
+  flex-direction: column !important;
+  margin: 1rem 0;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.btn-toolbar > .btn {
+  margin-bottom: 1rem;
+  > .btn,
+  > .btn-group,
+  > .input-group {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn-toolbar {
+    flex-direction: row !important;
+    > .btn,
+    > .btn-group,
+    > .input-group {
+      margin-left: .4rem;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .btn-toolbar > .btn {
+    margin-bottom: 0;
+  }
+}
+
+.card-header {
+  margin-bottom: 0;
+  .card-title {
+    @extend .h5;
+    margin-bottom: 0 !important;
+    font-weight: normal;
+  }
+}
