@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$brand-dark: #211E3C;
+$brand-medium: #373675;
+$brand-soft: #6460A4;
+
+$custom-colors: (
+  "brand-dark": $brand-dark,
+  "brand-medium": $brand-medium,
+  "brand-soft": $brand-soft,
+);
+
+$utilities-bg-colors: map-merge($custom-colors, $utilities-bg-colors)
