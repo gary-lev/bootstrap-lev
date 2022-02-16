@@ -63,9 +63,12 @@ $list-group-item-padding-x:   1.14rem !default;
 $font-family-sans-serif:    'Open Sans', sans-serif !default;
 $font-family-roboto:        'Open Sans', sans-serif !default;
 
-// @import "~bootstrap/scss/bootstrap";
+@import "variables";
+
 @import "~mdb-ui-kit/src/scss/mdb.free.scss";
 @import "./svg.scss";
+
+@import "~bootstrap/scss/bootstrap";
 
 // Typography
 
